@@ -1,0 +1,63 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: ${NAMESPACE}
+  name: ${APP_NAME}
+  labels:
+    app: ${APP_NAME}
+spec:
+  selector:
+    app: ${APP_NAME}
+  ports:
+  - port: 80
+    targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: ${NAMESPACE}
+  name: ${APP_NAME}
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-production
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  rules:
+    - host: ${INGRESS}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ${APP_NAME}
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - ${INGRESS}
+      secretName: cert-${INGRESS}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: ${NAMESPACE}
+  name: ${APP_NAME}
+spec:
+  selector:
+    matchLabels:
+      app: ${APP_NAME}
+  replicas: 1
+  template:
+    metadata:
+      namespace: ${NAMESPACE}
+      labels:
+        app: ${APP_NAME}
+        ver: "${DATETIME}"
+    spec:
+      containers:
+      - name: ${APP_NAME}
+        ports:
+        - containerPort: 10014
+        image: ${IMAGE}
+        imagePullPolicy: Always

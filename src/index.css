@@ -1,0 +1,513 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  list-style: none; 
+  font-family: 'Roboto', sans-serif!important;
+}
+:root {
+    --cui-primary: #060631!important;
+  }
+
+body{
+    margin:0;
+    padding:0;    
+    font-family: 'Roboto', sans-serif;
+    line-height: 114.28%;  
+    background-color: #060631; 
+}
+#root  > {
+    height: 100%;
+}
+.container{
+    max-width:1500px!important;
+}
+.container-fluid{
+    max-width:1900px
+}
+::selection{
+    background-color: rgba(110,180,250,0.5)!important;
+}
+.header{
+    background-color: #060631!important; 
+    border-bottom:none!important; 
+    color: #d9d9d9 !important;
+}
+.row{
+    width:100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.header .row{
+    min-height: 8rem;
+    margin: 0 !important;
+}
+.logo{
+    max-width:8rem
+}
+.logo-inskin{
+    max-height:2.8rem;
+    image-rendering:-webkit-optimize-contrast;
+}
+.user-account{
+    font-size: 0.8rem;
+}
+.user-account-menu{
+    font-size: 0.8rem;
+}
+.user-account-menu svg{
+    stroke: #fff!important;
+    fill: #fff!important;
+}
+.user-account-menu{
+    background-color: transparent!important;
+    border:none!important;
+}
+.az-avatar{
+    width: 2.5rem!important;
+    height: 2.5rem!important;
+    font-size: 1.8rem!important;
+    background-image: -webkit-gradient(linear,left top,right top,from(#6cc7ff),to(#795fe6))!important;
+    background-image: linear-gradient(90deg, #6cc7ff 0%, #795fe6 100%)!important;
+    transition: all .3s ease-in-out;
+}
+.az-avatar:hover,
+.user-account:focus
+{
+    /* -webkit-box-shadow: 0px 0px 0px 4px #6CC7FF 0px 0px 0px 7px #795fe6; 
+    box-shadow: 0px 0px 0px 4px #6CC7FF, 0px 0px 0px 7px #795fe6; */
+    transition: all .3s ease-in-out;
+
+}
+.form-button{
+    max-width:7rem;
+    max-height:2.5rem;
+    cursor: pointer;
+}
+.form-button.--second{
+    max-width:8rem;
+}
+button{
+    /*background-image:none!important;*/
+    transition: all .4s ease-in-out;
+    /*border: .1rem solid rgba(255, 255, 255, 0.6) !important;*/
+    color: #fff!important;
+    cursor: pointer;
+}
+.icon{
+    margin-right:5px;
+}
+.accordion-button{
+    border: .1rem solid rgba(255, 255, 255, 0.6) !important;
+}
+/* button:not(.header button){
+    background-image: -webkit-gradient(linear,left top,right top,from(#6cc7ff),to(#795fe6))!important;
+    background-image: linear-gradient(90deg, #6cc7ff 0%, #795fe6 100%)!important;
+    transition: all .4s ease-in-out;
+} */
+
+
+
+.user-account-menu::after{
+    border: none !important;
+}
+.user-account-menu > .dropdown-menu{
+    min-width: 8rem;
+}
+.modal-footer{
+    border: none !important;
+}
+.modal-body{
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+}
+svg.icon-guestion {
+    width: 2rem !important;
+    height: 2rem !important;
+    font-size: 2rem !important;
+    stroke: #6cc7ff!important; 
+    fill: #6cc7ff!important;     
+    stroke-width: 0;
+    margin-right: 0.75rem;
+}
+p.loggin{
+    color: white !important;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.spinner{
+    margin: 0 auto !important; 
+    text-align: center;
+    width: 5rem !important;  
+    height: 5rem !important; 
+    display: block; 
+    margin-top: 9rem!important;
+    margin-bottom: 5rem!important;
+}
+.job-loading-spinner{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 2rem!important;
+    margin-left: 1rem;
+}
+.menu-item-icon{
+    font-size: 2.5rem;
+    fill: white!important;
+    stroke: white !important; 
+    pointer-events:none;
+}
+.navigation.nav{
+    border: none !important;
+}
+.navigation .nav-link{
+    text-align: center; 
+    border: solid 1px transparent !important;
+}
+.navigation .nav-link.active, .navigation .nav-link:hover{
+    border: solid 1px #6cc7ff !important;     
+}
+
+.navigation .nav-link.active .menu-item-icon,
+.navigation .nav-link:hover .menu-item-icon
+{
+    fill: #6cc7ff!important;
+    stroke: #6cc7ff !important;     
+}
+
+.jobs-tabs .nav-link.active, .jobs-tabs .nav-link:hover{
+    background-color:white;
+    color: #2684FF;
+}
+.jobs-tabs .nav-item{
+    position: relative;
+    min-width:4rem;
+}
+.jobs-tabs .nav-link{
+    border-bottom: solid 1px transparent !important;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.jobs-tabs .nav-link{
+    color: hsl(0, 0%, 70%);
+}
+.accordion-body {
+    padding: 2rem 1.25rem;
+}
+.accordion-button:not(.collapsed){
+    background-image: -webkit-gradient(linear,left top,right top,from(#6cc7ff),to(#795fe6))!important;
+    background-image: linear-gradient(90deg, #6cc7ff 0%, #795fe6 100%)!important;
+    color: #060631 !important;
+    box-shadow:none!important;
+}
+.accordion-button::after{
+    background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>")!important;
+    box-shadow:none!important;
+}
+.accordion-button:focus{
+    box-shadow:none!important;
+}
+.accordion-collpase{
+    background: #fafafa!important;
+}
+/*** Select ***/
+.react-select-container,
+.react-select-multi-container{
+    max-width: 20rem!important;
+    max-height:10rem;
+    transition: all 0.3s!important;
+}
+.react-select__control,
+.react-select-multi__control{
+    max-height:7rem;
+    overflow: auto;
+    cursor: text!important;
+    transition: all 0.3s!important;
+}
+.react-select-multi__indicators{
+    align-items: start!important;
+    cursor: pointer!important;
+}
+.react-select-multi__option,
+.react-select__option{
+    cursor: pointer!important;
+}
+.react-select-multi__option:first-of-type{
+    color:white!important;
+    background-image: -webkit-gradient(linear,left top,right top,from(#6cc7ff),to(#6cc7ff))!important;
+    background-image: linear-gradient(90deg, #6cc7ff 0%, #6cc7ff 100%)!important;
+    border-radius: 4px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    cursor: pointer!important;
+    width:40%;
+    margin:20px auto 10px auto;
+    transition: all .25s ease-in-out;
+}
+.react-select-multi__option:first-of-type:hover{
+    background-image: -webkit-gradient(linear,right top,left top,from(#6cc7ff),to(#795fe6))!important;
+    background-image: linear-gradient(270deg, #6cc7ff 0%, #795fe6 100%)!important;
+    transition: all .25s ease-in-out;
+}
+.react-select__option--is-focused,
+.react-select-multi__option--is-focused{
+    background-color: hsl(0, 0%, 90%)!important;
+    transition: all 0.3s!important;
+}
+.react-select__option--is-selected,
+.react-select-multi__option--is-selected{
+    background-color: #f5f5f5!important;
+    color:black!important;
+}
+.react-select__indicators{
+    cursor: pointer!important;
+}
+
+/****/
+.react-select-container ::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer!important;
+}
+.react-select-container ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    cursor: pointer!important;
+}
+.react-select-container ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height:40px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+    cursor: pointer!important;
+}
+.form-check .form-check-input{
+    background-color: white!important;
+}
+.form-check .form-check-input:checked{
+    background-color: #060631!important;
+}
+.form-check-label{
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+}
+/****/
+input.form-control{
+    max-width: 20rem!important;
+    max-height:10rem;
+    transition: all 0.3s!important;
+    background-color: white!important;
+    border-color: hsl(0, 0%, 80%);
+}
+input.form-control:hover {
+    border-color: hsl(0, 0%, 70%)!important;
+}
+input.form-control:focus {
+    border-color: #2684FF!important;
+    box-shadow: 0 0 0 1px #2684FF!important;
+    border-right-width: 1px!important;
+    outline: 0;
+}
+
+/****/
+.card-header{
+    background-image: -webkit-gradient(linear,left top,right top,from(#6cc7ff),to(#795fe6))!important;
+    background-image: linear-gradient(90deg, #6cc7ff 0%, #795fe6 100%)!important;
+    font-size: 1.1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    height:100%;
+    padding-left:2rem;
+    padding-right:3.5rem;
+}
+.card-body{
+    min-height:13.5rem!important;
+    padding-top:1.5rem;
+    padding-bottom: 2.5rem;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+.card{
+    min-height:10rem!important;
+}
+.card-header__num{
+    position: absolute;
+    color:white;
+    right:1.25rem;
+    top:1.25rem;
+    padding-left:5rem;
+}
+
+.accordion-button{
+    font-size: 1.1rem;
+}
+.callout{
+    background: #fafafa!important;
+}
+.react-datepicker{
+    border: none;
+}
+.react-datepicker__header{
+    border-bottom: none;
+}
+.react-datepicker-ignore-onclickoutside{
+    border-color: #2684FF!important;
+    box-shadow: 0 0 0 1px #2684FF!important;
+    outline: 0;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    display:block;
+}
+.react-datepicker__tab-loop{
+    width:0;
+}
+.react-datepicker-wrapper{
+    display:flex!important;
+    max-width: 10rem!important;
+    max-height: 3.5rem;
+    outline: 0!important;
+    transition: all 0.3s!important;
+    justify-content: center;
+    align-content: center;
+}
+.react-datepicker__input-container{
+    width: 10rem;
+    height:100%;
+    background-color: hsl(0, 0%, 100%);
+    transition: all 0.3s!important;
+    display:flex;
+}
+.react-datepicker__input-container > input:hover{
+    border-color: hsl(0, 0%, 70%);
+}
+.react-datepicker__input-container > input{
+    outline: 0!important;
+    width: 10rem;
+    height:2.32rem;
+    padding-left: 1rem;
+    position: relative;
+    display:flex;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    line-height: 1.5715;
+    background-image: url("/calendar.svg");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: all 0.3s;
+    flex: auto;
+    min-width: 1px;
+    cursor: text;
+    transition: all 0.3s!important;
+}
+.react-datepicker__month-container{
+    width:18rem!important;
+    height:20.5rem!important;
+    overflow: hidden;
+    vertical-align: top;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+    transition: margin 0.3s;
+
+}
+.react-datepicker__month-wrapper{
+    margin-bottom: 1.7rem;
+    margin-top: 1.9rem;
+    transition: all 0.3s!important;
+}
+.react-datepicker__month.react-datepicker__monthPicker{
+    transition: all 0.3s!important;
+}
+.react-datepicker__month-text{
+    font-size: 14px!important;
+    width:5rem!important;
+    padding:7px 0;
+    cursor: pointer;
+    transition: all 0.3s!important;
+}
+.react-datepicker__month-text:hover{
+    transition: all 0.3s!important;
+}
+.react-datepicker__month-text--keyboard-selected{
+    background-color:#6cc7ff!important;
+    transition: all 0.3s!important;
+}
+.page-item.active .page-link{
+    /*background-color:#6cc7ff!important;*/
+    z-index:0!important;
+}
+.close-button{
+    position:absolute;
+    top:3px;
+    right:3px;
+    font-size: 0.5rem!important;
+    border: 0.02rem solid transparent;
+}
+.close-button:focus{
+    border: 0.01rem solid rgba(0, 0, 0, 0.6);
+    box-shadow: none!important;
+}
+.close-button:hover, .close-button:active{
+    border: 0.01rem solid rgba(0, 0, 0, 0.6);
+    transition: all 0.3s!important;
+}
+
+.timeline-container{
+    width:100%;
+    height:100%;
+    margin-top:2.5rem;
+}
+.timeline{
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.8)!important;
+    display: flex;
+    align-items: center;
+    min-height:2.5rem;
+    justify-content: left;
+    margin-left:1.2rem;
+}
+.timeline p{
+    margin: 0!important;
+}
+.timeline-icon {
+    fill: #2684FF!important;
+    margin-right:0.8rem;
+    align-self: center;
+    min-width:1rem!important;
+    min-height:1rem!important;
+}
+.timeline.close .timeline-icon {
+    fill: #ff5000!important;
+}
+.timeline::after{
+    content:"";
+    border-left: solid 1px #2684FF;
+    height:1rem;
+    margin-left:0.43rem;
+    position: absolute;
+    margin-bottom:-1.7rem;
+}
+.timeline::before{
+    content:"";
+    border-left: solid 1px #2684FF;
+    height:1rem;
+    margin-left:0.43rem;
+    position: absolute;
+    margin-top:-1.7rem;
+}
+.timeline:first-child::before,
+.timeline:last-child::after{
+    border-color: transparent;
+}
+.no-data-icon{
+    fill: #6cc7ff;
+}
+
+

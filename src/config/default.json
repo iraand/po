@@ -1,0 +1,12 @@
+{
+  "portal_api_url": "https://api.reports.staging.inskinmedia.com",
+  "reports_url": "https://reports.staging.inskinmedia.com",
+
+  "first_year": 2018,
+  "job_statuses": {
+    "finished": "done",
+    "failed": "failed",
+    "not_found": "not_found"
+  },
+  "local_storage_key": "token"
+}
